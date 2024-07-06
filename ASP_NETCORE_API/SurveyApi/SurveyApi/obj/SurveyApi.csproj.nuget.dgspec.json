@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\ASP_NETCORE_API\\SurveyApi\\SurveyApi\\SurveyApi.csproj": {}
+    "D:\\MINI_PROJECT\\ASP_NETCORE_API\\SurveyApi\\SurveyApi\\SurveyApi.csproj": {}
   },
   "projects": {
-    "D:\\Project\\ASP_NETCORE_API\\SurveyApi\\SurveyApi\\SurveyApi.csproj": {
+    "D:\\MINI_PROJECT\\ASP_NETCORE_API\\SurveyApi\\SurveyApi\\SurveyApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\ASP_NETCORE_API\\SurveyApi\\SurveyApi\\SurveyApi.csproj",
+        "projectUniqueName": "D:\\MINI_PROJECT\\ASP_NETCORE_API\\SurveyApi\\SurveyApi\\SurveyApi.csproj",
         "projectName": "SurveyApi",
-        "projectPath": "D:\\Project\\ASP_NETCORE_API\\SurveyApi\\SurveyApi\\SurveyApi.csproj",
+        "projectPath": "D:\\MINI_PROJECT\\ASP_NETCORE_API\\SurveyApi\\SurveyApi\\SurveyApi.csproj",
         "packagesPath": "C:\\Users\\muham\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\ASP_NETCORE_API\\SurveyApi\\SurveyApi\\obj\\",
+        "outputPath": "D:\\MINI_PROJECT\\ASP_NETCORE_API\\SurveyApi\\SurveyApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
