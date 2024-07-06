@@ -162,6 +162,15 @@ namespace ConsumeWebAPI.Controllers
                 {
                     string data = respone.Content.ReadAsStringAsync().Result;
                     survey_ = JsonConvert.DeserializeObject<Lembaga_SurveyViewModel>(data);
+
+                    if (survey_.FLAG == "Y")
+                    {
+                        TempData["Status"] = "Aktif";
+                    }
+                    else
+                    {
+                        TempData["Status"] = "Tidak Aktif";
+                    }
                 }
                 return View(survey_);
             }
@@ -211,6 +220,15 @@ namespace ConsumeWebAPI.Controllers
                 {
                     string data = respone.Content.ReadAsStringAsync().Result;
                     survey_ = JsonConvert.DeserializeObject<Lembaga_SurveyViewModel>(data);
+
+                    if (survey_.FLAG == "Y")
+                    {
+                        TempData["Status"] = "Aktif";
+                    }
+                    else
+                    {
+                        TempData["Status"] = "Tidak Aktif";
+                    }
                 }
                 return View(survey_);
             }

@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Delete Lembaga Survey";
+    var _Status = TempData["Status"].ToString();
 }
 
 <h1>Delete</h1>
@@ -58,7 +59,8 @@
             @Html.DisplayNameFor(model => model.FLAG)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.FLAG)
+            @*@Html.DisplayFor(model => model.FLAG)*@
+            @_Status
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.TGL_SURVEY)
