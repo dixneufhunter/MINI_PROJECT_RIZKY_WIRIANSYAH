@@ -44,7 +44,6 @@ namespace SurveyApi.Controllers
             //var data = await _dbContext.lembaga_survey.Include(c => c.ID_LEMBAGA).ToListAsync();
             var data = await _dbContext.lembaga_survey.ToListAsync();
 
-            var test = string.Empty;
             return data;
 
         }
