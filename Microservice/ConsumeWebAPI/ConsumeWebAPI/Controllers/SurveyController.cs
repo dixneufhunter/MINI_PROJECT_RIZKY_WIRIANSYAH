@@ -12,7 +12,8 @@ namespace ConsumeWebAPI.Controllers
 {
     public class SurveyController : Controller
     {
-        Uri baseAddress = new Uri("https://localhost:5001/api");
+        /*Uri baseAddress = new Uri("https://localhost:5001/api");*/
+        Uri baseAddress = new Uri("http://localhost:5001/api");
         private readonly HttpClient _client;
 
         public SurveyController()

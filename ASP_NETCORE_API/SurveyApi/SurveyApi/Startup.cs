@@ -51,7 +51,17 @@ namespace SurveyApi
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "SurveyApi v1"));
+
+                //app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "SurveyApi v1")); //OFF 20 Sept 2024 (IIS EXPRESS)
+
+                string virDir = Configuration.GetSection("VirtualDirectory").Value;
+
+                app.UseSwaggerUI(c =>
+                {
+                    //c.SwaggerEndpoint(virDir + "/swagger/v1/swagger.json", "SurveyApi v1"); //WITH VirDir
+                    c.SwaggerEndpoint(virDir + "/swagger/v1/swagger.json", "SurveyApi v1");
+                });
+
                 //app.UseSwaggerUI(options => // UseSwaggerUI is called only in Development.
                 //{
                 //    options.SwaggerEndpoint("/swagger/v1/swagger.json", "SurveyApi v1");
